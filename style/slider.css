@@ -1,0 +1,37 @@
+﻿
+/* slider root element */
+.slider { 
+    background:#000; 
+    height:15px; 
+    width:675px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+
+/* progress bar (enabled with progress: true) */
+.progress {
+    height:9px; 
+    background-color:#C5FF00; 
+    display:none;
+    opacity:0.6;
+}
+
+/* drag handle */
+.handle { 
+    background:#fff; 
+    height:21px;
+    width:21px;
+    position:absolute; 
+    display:block; 
+    margin-top:1px;
+    cursor:move;
+
+}
+
+/* the input field */
+.range {
+   display: none;	
+}
+

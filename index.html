@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EP Studio Headshots</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="
+	portrait photographer,
+	headshots,
+	actors photography,
+	headshots london,
+	acting headshots,
+	actors headshot photographers,
+	head shots,
+	headshot photographers,
+	headshot photographers london,
+	actors photographers,
+	actors headshots,
+	corporate portraits,
+    headshots for acting,
+    professional portrait photographers,
+	actors head shots,
+	actor headshots" />
+    <meta name="description" content="EP Studio Headshots - London based photographer doing the greatest headshot.">
+    <meta name="Copyright" content="All photography on this site - Copyright (c) Elena Pirogova 2014" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://plus.google.com/113661356772527675750" rel="publisher">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/font/fonts.css">
+    <link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="jbcore/juicebox.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38049400-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        $(document).ready(function () {
+
+            var juice = new juicebox({
+                containerId: 'juicebox',
+                galleryWidth: "80%", //"468",
+                galleryHeight: "75%",//"650px",
+                backgroundColor: "rgba(255,255,255,1)"
+            });
+
+ 
+            $('.nolink').mouseover(function (e) {
+                $(e.currentTarget).css('text-decoration', 'line-through');
+            });
+            $('.nolink').mouseout(function (e) {
+                $(e.currentTarget).css('text-decoration', 'none');
+            });
+
+            $('a[href="#home"]').on('shown.bs.tab', function (e) {
+                juice.showNextImage();
+            });
+
+            var google_conversion_id = 984518957;
+			var google_conversion_language = "en";
+			var google_conversion_format = "1";
+			var google_conversion_color = "ffffff";
+			var google_conversion_label = "t5k1CNOJ8QgQraK61QM";
+			var google_remarketing_only = false;
+			
+			$('.contactMeButton').click(function (e) {
+                $('#myModal').modal('toggle');
+                _gaq.push(["_trackEvent", "Contact Button Menu", "Contact", ""]);
+				$.getScript( "http://www.googleadservices.com/pagead/conversion.js" );
+            });
+
+			
+			
+            $('a[href="#studio"]').on('shown.bs.tab', function (e) {
+                var $targetElement = $('.mapTarget');
+                var targertWidth = $targetElement.width();
+                if ($targetElement.children('iframe')[0] == undefined) {
+                    $targetElement.append('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4962.726676995827!2d-0.025240589024329328!3d51.543236218902464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d6cd681ca67%3A0x78ba2745b390a4a8!2sEP+Studio+Headshots!5e0!3m2!1sen!2suk!4v1399210549269" height="350" width="' + targertWidth + '" frameborder="0" style="border:0"></iframe>');
+                }
+            });
+	
+        });
+    </script>
+
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand portraitsLabelFont" href="#">EP Studio Headshots</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav nav-tabs">
+                        <li class="active"><a href="#home" data-toggle="tab" onclick="_gaq.push(['_trackEvent', 'Menu Click', 'Home', ''])">Home</a></li>
+                        <li><a href="#package" data-toggle="tab" onclick="_gaq.push(['_trackEvent', 'Menu Click', 'Packages', ''])">Packages</a></li>
+                        <li><a href="#photographer" data-toggle="tab" onclick="_gaq.push(['_trackEvent', 'Menu Click', 'Photographer', ''])">Photographer</a></li>
+                        <li><a href="#studio" data-toggle="tab" id="mapLauncher" onclick="_gaq.push(['_trackEvent', 'Menu Click', 'Studio', ''])">Studio</a></li>
+                        <li><a href="http://www.e-pirogova.com/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Menu Click', 'Other', ''])">Other Photography</a></li>
+                        <li><a href="#faq" data-toggle="tab" onclick="_gaq.push(['_trackEvent', 'Menu Click', 'FAQ', ''])">FAQ</a></li>
+                        <li><button class="contactMeButton btn btn-default" style="margin-top: 8px;">Contact</button></li>
+                    </ul>
+                    <ul class="navbar-text  navbar-right">
+                        <li style="display: inline;">
+                            <span class="icon-bar">
+                                <a href="http://twitter.com/#!/epirogova" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social Link', 'Twitter', 'From home'])">
+                                    <img src="/style/icons/twitter.png" alt="twitter" width="20" height="20">
+                                </a>
+                            </span>
+                        </li>
+                        <li style="display: inline;">
+                            <span class="icon-bar">
+                                <a href="http://www.facebook.com/pages/Elena-Pirogova-Photography/308974113589" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social Link', 'Facebook', 'From home'])">
+                                    <img src="/style/icons/facebook.png" alt="facebook" width="20" height="20">
+                                </a>
+                            </span>
+                        </li>
+                        <li style="display: inline;">
+                            <span class="icon-bar">
+                                <a href="http://e-pirogova.tumblr.com" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social Link', 'Tumbler', 'From home'])">
+                                    <img src="/style/icons/tumbler.png" alt="tumbler" width="20" height="20">
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade aboutTextFont" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Email me:</h4>
+                        <h3><a target="_blank" href="mailto:contact@e-pirogova.com?subject=Enquiry: EP headshots" onclick="_gaq.push(['_trackEvent', 'Book Link', 'Email', 'Menu header'])">contact@e-pirogova.com</a></h3>
+                        <h4>Call me:</h4>
+                        <h3>0782 6718 362</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content ">
+            <div class="tab-pane active fade in " id="home">
+                <div class="container-fluid homeIntro" style="max-width: 600px; text-align: center;">"Getting the best out of you is what I do. I'll make you feel comfortable in front of camera, guide you through the shoot and deliver results you'll love."</div>
+                <div class="container-fluid" id="juicebox"></div>
+            </div>
+            <div class="tab-pane fade homeIntro" id="package">
+                <div class="container-fluid" style="text-align: center; max-width: 900px">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Baseline package for only &#163;99</h2>
+                            <span class="badge logoPhotography">5 headshots</span>
+                            <span class="badge logoPhotography">10 images</span>
+                            <span class="badge logoPhotography">2 hours</span>
+                            <span class="badge logoPhotography">in 2 days</span>
+                            <span class="badge logoPhotography">high level</span>
+                        </div>
+                        <div class="panel-body ">
+                            <ul class="list-group ">
+                                <li class="list-group-item">
+                                    <strong class="darktext">5 headshots / 10 images industry standard - 10x8in (Outstanding value !)</strong>
+                                    <small> 5 retouched looks of your own choice, delivered in black&white as well as in color. Altogether 10 images. If you not sure with your choices, don't worry I will help and try suggest my favorites.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">Up to 2 hours long session</strong>
+                                    <small> From my experience I am quite sure we will achieve great result in 1 hour, but that doesn't mean I will be pushing on you, I want you to feel comfortable because that is when the magic starts happening. You have loong two hours session, but this is not only shooting. </small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">All images available for download</strong>
+                                    <small> Every of your looks is unique and should not be left behind. Those images what didn't make it through the final selection will stay with you as well cropped to 10x8in</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">All images available for selection at the day</strong>
+                                    <small> Once I get home from the shoot, I will review the images we did together during the session and put them online so you can start your selection process.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">During the shoot you'll see what we're getting on the screen</strong>
+                                    <small> Tether shoot is pretty much standard these days and for the headshots is necessity. I want you to see the images we are getting so you can participate in the look we are aiming for.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">“The Instructage”</strong>
+                                    <small> We start off with a cuppa. You will tell me some of your darkest secrets so you not too shy in front of the camera and for an exchange I will share with you how to look natural, tell you what the agencies don't like and what they do or we just chat and see how it goes.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">Delivery in 2 business days</strong>
+                                    <small> Everyone likes to have a weekend right ? After you select your final looks and let me know, I will have retouched images ready for download within 2 business days.</small>
+                                </li>
+                            </ul>
+
+                            <div class="container-fluid" style="max-width: 600px;">
+                                <button data-toggle="modal" data-target="#myModal" type="button" class="contactMeButton btn btn-primary btn-sm btn-block">For any questions or availability enquiry click here !</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading ">
+                            <h3 class="panel-title">Little extras</h3>
+                        </div>
+                        <div class="panel-body ">
+                            <ul class="list-group ">
+                                <li class="list-group-item">
+                                    <strong class="darktext">Extra hour, inclusive of 3 extra retouched images &#163;80</strong>
+                                    <small> If you need more looks we can do extra hour, we can go outside the studio, try more clothes more looks.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">Make up and hair styling &#163;80</strong>
+                                    <small> Want to have your make up and hair done by professional? I have a great list of makeup artists who does hair as well, and they are only people I worked with previously - professionals as you or me.  Keep in mind that this extras will extend your session by at least 30 minutes.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">Extra image to retouch &#163;15</strong>
+                                    <small> When you find out you like more images you would like to have polished, no worries I will retouch them for you for a little extra</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">Delivery on CD/DVD &#163;10</strong>
+                                    <small> Want to have your images on the DVD, I will burn them for you and post it.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">Online gallery &#163;25</strong>
+                                    <small> At that point when you need to choose your images, as part of the base line package I will deliver you images in a .zip file via Google Docs or via DropBox, if you prefer fancy online gallery and want to seamlessly slide through your pictures this extra will do.</small>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade homeIntro" id="photographer">
+                <div class="container-fluid" style="max-width: 900px">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="text-align: center;">
+                            <h2 class=" panel-title">Elena</h2>
+                        </div>
+                        <div class="panel-body homeIntro">
+                            <div>
+                                <img src="images/ElenaPirogova.jpg" alt="Elena Pirogova" style="float: left; padding-right: 10px;" height="280" width="280">
+                                <div>
+                                    <p>&nbsp;&nbsp;My name is Elena, I have been working as professional photographer for 7 years. I studied photography in London as well as in Moscow, you can find some of my recent works at <a onclick=" _gaq.push(['_trackevent', 'Link' , 'To Pirogova.com' , 'Photographer' ])" href="http://www.e-pirogova.com/#portrait">e-pirogova.com</a>. I frequently contribute to InStyle and Tatler magazines. My other noticeable publications include "Glamour", "Let Them Eat Cake", "Highlights", "KNEON", "Alila" ,"New Style", "Yes!", "Playing Fashion", "Snob.ru" etc.</p>
+                                    <br />
+                                    <p>&nbsp;&nbsp;In my portfolio you will find celebrities such as Paul Smith, Roberto Cavalli, Sol Campbell, Elie Saab, Candy Dulfer, Matteo Marzotto, Bruno Frisoni, Cristine D'Ornano, Maria Hatzistefanis, Alisa Khazanova.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-group darktext ">
+                            <li class="list-group-item cpp" style="min-height:150px;">
+                                <a class="" onclick="_gaq.push(['_trackevent', 'Link' , 'To casting call' ])" target="_blank" href="http://www.castingcallpro.com/uk/view.php?uid=526624&amp;all=1">Casting Call Pro Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade homeIntro" id="studio">
+                <div>
+                    <div class="container-fluid" style="margin: 15px; text-align: center; max-width: 900px">
+                        <div class="container-fluid homeIntro">
+                            <div class="panel panel-default">
+                                <div class="panel-heading mapTarget">
+                                    <!--         <div id="map_canvas" style="height:350px; margin:10px; "></div>-->
+                                </div>
+                                <div class="panel-body homeIntro">
+                                    <div class="container-fluid">
+                                        <p>My Studio is located 2 minutes from Hackney Wick overground station, 20 minutes from Liverpool st./Brick Lane/Kings Cross, 7 minutes from Stratford station, 2 minutes from the Olympic park.</p>
+                                        <p>Studio is very bright, large, nicely decorated and offers enough comfort and privacy.</p>
+                                        <p>Hackney Wick area is vibrant and very artisctic. There is number of galleries around. If you want to relax or enjoy yourself before or after shoot there is number of nice coffee places and restaurants around.</p>
+                                        <p>Hackney wick information and map <a href="http://www.hackneywick.co.uk/">www.hackneywick.co.uk</a>. </p>
+                                        <p>Nearest coffee/bar/kitchen located at the entrance to the Main Year where my studio is located <a href="http://90mainyard.co.uk">90mainyard.co.uk</a>. </p>
+                                        <p>Very nice restaurant just behind the corner <a href="http://www.thehackneypearl.com/">Hackney Pearl</a>. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade homeIntro" id="faq">
+                <div class="container-fluid" style="text-align: center; max-width: 900px">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">FAQ</h2>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group ">
+                                <li class="list-group-item">
+                                    <strong class="darktext">What happens after the shoot?</strong>
+                                    <small>Latest 24 hours after the shoot, I will send you a link to the images. You choose the photos you want to get retouched and I will deliver each of them in black&white and colour within 2 working days.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">How should I pay?</strong>
+                                    <small>As a confirmation of booking I will need to receive a £20 deposit from you. This amount will be deducted form the final payment. The easiest way is bank transfer directly to my account. Alternatively you can pay in cash on the day of the shoot.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">Why are you taking a deposit?</strong>
+                                    <small>For my work I must plan ahead and I need to be sure you will turn up to the shoot. However, a session can be re-booked up to 2 days before the shoot.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">What should I bring with me?</strong>
+                                    <small>A few changes of tops with different necklines without contrast patterns or eye-catching details. A combination of dark and light clothes.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">Do you make prints yourself?</strong>
+                                    <small>No, I don't but I can recommend a very good and affordable service: <a href="http://10x8prints.com" target="_blank">10x8prints</a>.</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong class="darktext">What does ‘retouching’ of an image mean?</strong>
+                                    <small>Basic blemishes and temporary spots are removed to help look your best. It takes around 30 minutes per image.</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
